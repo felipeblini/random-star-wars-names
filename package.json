@@ -1,0 +1,28 @@
+{
+  "name": "star-wars-names",
+  "version": "1.0.0",
+  "description": "Get random Star Wars names",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipeblini/star-wars-names.git"
+  },
+  "keywords": [
+    "names",
+    "starwars",
+    "star",
+    "wars"
+  ],
+  "author": "Felipe Blini <felipe@blini.io> (http://blini.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/felipeblini/star-wars-names/issues"
+  },
+  "homepage": "https://github.com/felipeblini/star-wars-names#readme",
+  "dependencies": {
+    "unique-random-array": "1.0.0"
+  }
+}
