@@ -1,6 +1,6 @@
 {
   "name": "random-star-wars-names",
-  "version": "0.0.0-semantically-release",
+  "version": "0.0.0-semantically-releasing-with-semantic-release-module",
   "description": "Get random Star Wars names",
   "main": "src/index.js",
   "scripts": {
