@@ -67,5 +67,22 @@ describe('starwars-names',  function() {
                 .to.contains('Luke Skywalker');
         });
     });
+
+    describe('method:checkName', function() {
+        
+        it('Should returns true when passing Luke Skywalker as parameter',
+        function() {
+            expect(starwars.checkName('Luke Skywalker'))
+                .to.be.true;
+        });
+
+        it('Should returns false when passing inexistent name as parameter',
+        function() {
+            expect(starwars.checkName('+#abcd|{}'))
+                .to.be.false;
+        });
+            
+    });
+        
 });
     
