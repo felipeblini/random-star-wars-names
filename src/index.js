@@ -8,7 +8,7 @@ const getRandomItem = uniqueRandomArray(starwarsNamesArray);
 module.exports = {
     all: starwarsNamesArray,
     random: getRandomList,
-    byName: getByName
+    byName: getBySubstring
 };
 
 function getRandomList(num) {
@@ -25,6 +25,6 @@ function getRandomList(num) {
     }
 }
 
-function getByName(name) {
+function getBySubstring(name) {
     return starwarsNamesArray.filter(e => e.includes(name))
 }
