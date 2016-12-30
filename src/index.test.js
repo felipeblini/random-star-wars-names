@@ -62,7 +62,7 @@ describe('starwars-names',  function() {
     describe('method:byName', function () {
         
         it('should return all names that contains the substring ' +
-            'passed as a parameter', () => {
+            'passed as a parameter', function() {
             expect(starwars.byName('Luke Skywalker'))
                 .to.contains('Luke Skywalker');
         });
