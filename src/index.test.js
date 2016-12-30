@@ -47,13 +47,25 @@ describe('starwars-names',  () => {
         });
 
         it('it should return a array of 2 random names if ' +
-            'passed 2 and th list has 2 or more names', () => {
+            'passed 2 and the list has 2 or more names', () => {
             const randomItems = starwars.random(2);
             
             if(starwars.all.length >= 2) {
                 expect(randomItems).to.have.length(2);
             }
         });
-    });  
+    });
+
+    
+    describe('method:byName', () => {
+        
+        it('should return all names that contains the substring ' +
+            'passed as a parameter', () => {
+            expect(starwars.byName('Luke Skywalker'))
+                .to.contains('Luke Skywalker');
+        });
+            
+    });
+        
 });
     
