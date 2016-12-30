@@ -26,5 +26,7 @@ function getRandomList(num) {
 }
 
 function getBySubstring(name) {
-    return starwarsNamesArray.filter(e => e.includes(name))
+    return starwarsNamesArray.filter(function(e) {
+        return e.includes(name);
+    });
 }
